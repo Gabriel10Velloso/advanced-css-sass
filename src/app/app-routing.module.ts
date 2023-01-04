@@ -5,16 +5,16 @@ import { AppNatourSharedModule } from '../../projects/natours/src/app/app-natour
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   {
-    path: 'home/natours',
+    path: 'natours',
     loadChildren: async () => {
       const { AppNatourSharedModule } = await import('../../projects/natours/src/app/app-natours.module');
       return AppNatourSharedModule;
     },
   },
 
-  { path: '**', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
