@@ -3,10 +3,9 @@ import { AppNatoursRoutingModule } from './app-natours.routing';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NavNatoursComponent } from './nav-natours/nav-natours.component';
-import { HomeNatoursComponent } from './home-natours/home-natours.component';
 
 @NgModule({
-  declarations: [AppNatoursComponent, NavNatoursComponent, HomeNatoursComponent],
+  declarations: [AppNatoursComponent, NavNatoursComponent],
   imports: [BrowserModule, AppNatoursRoutingModule],
   providers: [],
   bootstrap: [AppNatoursComponent],
