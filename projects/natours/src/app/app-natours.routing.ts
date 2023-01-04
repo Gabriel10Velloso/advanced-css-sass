@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppNatoursComponent } from './app-natours.component';
+import { HomeNatoursComponent } from './home-natours/home-natours.component';
 
 const routes: Routes = [
-  { path: 'natours', component: AppNatoursComponent },
+  { path: 'natours', component: HomeNatoursComponent },
 ];
 
 @NgModule({

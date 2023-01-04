@@ -4,11 +4,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## CategoryDTO
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Angular Class DTO](https://stackblitz.com/edit/angular-icon-change-kxzspf?file=src%2Fapp%2Fapp.component.ts) page
+
+
+## Adicionando favicon Dinamico
+
+[Favicon Dinamico](https://www.bennadel.com/blog/3408-creating-a-dynamic-favicon-service-in-angular-5-2-4.htm) page
+[Demo](https://bennadel.github.io/JavaScript-Demos/demos/dynamic-favicon-angular5/) page
+
 
 ## Build
 
