@@ -10,3 +10,7 @@
 ## Criando estilo no TS
 Criando estilo css no TS [CSS](https://stackblitz.com/edit/react-ts-4slzff?file=theme.ts).
 
+
+
+<!-- https://indepth.dev/posts/1052/exploring-angular-dom-manipulation-techniques-using-viewcontainerref -->
+

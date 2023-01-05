@@ -11,7 +11,6 @@ export class FaviconsService {
   constructor (@Inject(DOCUMENT) private document: Document) {}
 
   public updateFavicon(url: string) {
-    console.log(url)
     const link:any = this.document.querySelector('#icon') as HTMLElement | null;
     link.href = url;
   }
