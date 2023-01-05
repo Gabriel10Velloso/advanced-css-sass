@@ -7,6 +7,6 @@
 [Demo](https://bennadel.github.io/JavaScript-Demos/demos/dynamic-favicon-angular5/) page
 
 
-## Running unit tests
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Criando estilo no TS
+Criando estilo css no TS [CSS](https://stackblitz.com/edit/react-ts-4slzff?file=theme.ts).
 

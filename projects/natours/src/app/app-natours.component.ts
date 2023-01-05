@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { FaviconsService } from 'src/app/services/favicons.service';
 
 @Component({
@@ -7,11 +8,15 @@ import { FaviconsService } from 'src/app/services/favicons.service';
   styleUrls: ['./app-natours.component.scss'],
 })
 export class AppNatoursComponent implements OnInit, AfterViewInit {
-  constructor(private faviconService: FaviconsService) {}
+
+  newTitle = 'Natours | Exciting tours for adventurous people'
+
+  constructor(private faviconService: FaviconsService, private titleService: Title) {}
 
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
+    this.titleService.setTitle(this.newTitle);
     this.faviconService.updateFavicon('./assets/icons/natours.ico');
   }
 }
