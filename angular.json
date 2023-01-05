@@ -40,7 +40,9 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "projects/natours/src/styles.scss",
+              "projects/trillo/src/styles.scss"
             ],
             "scripts": []
           },
