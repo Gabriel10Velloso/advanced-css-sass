@@ -1,9 +1,32 @@
-// :root {
-//   --primary: #373737;
-//   --contrast: #8DC63F;
-//   --white: #FFFFFF;
-//   --black: #0000;
-//   --tollbar: #009688;
-//   --nav: rgb(249, 249, 249);
-//   --beige: #FCFCFC;
-// }
+@import './fonts.scss';
+
+//////////// LATO ///////////
+/////////  SANS SERIF //////
+// Fonte Lato Google https://fonts.google.com/specimen/Lato?query=%C5%81ukasz+Dziedzic
+.Fonts {
+  &_lato {
+    font-family: var(--fonts-lato-sans-serif);
+  }
+
+  &_sanserif {
+    &--100 {
+      font-weight: var(--fonts-lato-sans-serif-100);
+    }
+
+    &--300 {
+      font-weight: var(--fonts-lato-sans-serif-300);
+    }
+
+    &--400 {
+      font-weight: var(--fonts-lato-sans-serif-400);
+    }
+
+    &--700 {
+      font-weight: var(--fonts-lato-sans-serif-700);
+    }
+
+    &--900 {
+      font-weight: var(--fonts-lato-sans-serif-900);
+    }
+  }
+}
