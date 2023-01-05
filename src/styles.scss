@@ -13,13 +13,17 @@
 
 // Seta o estilo do Body Principal
 .Advanced-css-sass {
-  background: white;
+  background: red;
 }
 
 // Seta o estilo do Body Principal
 .NatoursBody {
   font-family: var(--fonts-lato-sans-serif);
-  background: red;
+  font-weight: var(--fonts-lato-sans-serif-400);
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
 }
 
 // Seta o estilo do Body Principal

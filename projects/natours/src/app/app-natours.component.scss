@@ -1,7 +1,16 @@
 @import '../styles.scss';
 
 .header {
-
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #7bcf6caf, #28b485), url(../assets/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  // https://bennettfeely.com/clippy/
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  // clip-path: polygon(x y, x y, x y, x y); Ajuste x y sentido horário (esquerda para direita)
+  // clip-path: polygon(50% 0, 100% 100%, 0 100%); // triangulo
 }
 
 
