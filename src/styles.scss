@@ -6,10 +6,18 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-
+  // box-sizing: border-box;
 }
 
+/*  *** [SEÇÃO 2] 18. Converting px to rem: An Effective Workflow ***
+          ➡️  Dessa forma 1rem vai ser calculado a partid de 10px e não de 16px do browser
+              Isso impacta toda aplicação
+*/
+html {
+  // font-size: 10px; 16px  --- 100%  10px x 100/16px == 62.5%
+  font-size: 62.5%;
+  box-sizing: inherit; // Especifica que uma propriedade deve herdar seu valor de seu elemento pai
+}
 
 
 // ============================== 📢CURSO UDEMY ==============================
@@ -19,7 +27,7 @@
           ➡️ [APPS] Em Uso: ['Natous','']
           ➡️ Componentes: TODOS
 */
-.Advanced-css-sass {
+.AdvancedCssSass {
   background: red;
 }
 
@@ -35,10 +43,11 @@
 .NatoursBody {
   font-family: var(--fonts-lato-sans-serif); // Fonte Globall
   font-weight: var(--fonts-font-weight-400);
-  font-size: 16px;
+  // font-size: 16px;
   line-height: 1.7;
   color: var(--color-grey-dark);
-  padding: 30px;
+  padding: 3rem;
+  box-sizing: border-box; // elemento pai no html{box-sizing: inherit;}
 }
 
 

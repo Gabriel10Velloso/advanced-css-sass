@@ -6,7 +6,6 @@
           ➡️ Componentes: Está sendo usado no ['app-header-natours', '']
 */
 .Btn {
-
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -23,8 +22,10 @@
 
   &__animated {
     animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
-  }
+    // EX: https://developer.mozilla.org/pt-BR/docs/Web/CSS/animation-fill-mode
+    animation-fill-mode: backwards; // volta ao estado original sem p
+    -webkit-animation: moveInBottom .5s ease-out .75s;
+}
 
   &__white {
     background-color: var(--color-white);
