@@ -16,15 +16,17 @@
   background: red;
 }
 
+
 // Seta o estilo do Body Principal
 .NatoursBody {
-  font-family: var(--fonts-lato-sans-serif);
-  font-weight: var(--fonts-lato-sans-serif-400);
+  font-family: var(--fonts-lato-sans-serif); // Fonte Globall
+  font-weight: var(--fonts-font-weight-400);
   font-size: 16px;
   line-height: 1.7;
-  color: #777;
+  color: var(--color-grey-dark);
   padding: 30px;
 }
+
 
 // Seta o estilo do Body Principal
 .TrilloBody {
