@@ -1,0 +1,53 @@
+/*  *** [GLOBAL] FONT LATO SANS SERIF ***
+          ➡️ URL: https://cvgabriel.herokuapp.com/
+          ➡️ [APPS] Em Uso: ['Natours','']
+          ➡️ Componentes: Está sendo usado no ['app-header-natours', '']
+          ➡️[NOMENCLATURA] SCSS
+            - Classes oriundas da pasta SASS iniciam com letra maiuscula
+            - Classes oriundas dos componentes iniciam com letra minuscula
+*/
+.Fonts {
+  &__lato {
+    &--sans-serif {
+      font-family: var(--fonts-lato-sans-serif); // Foi setado globalmente no projeto natours
+    }
+  }
+
+  &__font-weight {
+    &--100 {
+      font-weight: var(--fonts-font-weight-100);
+    }
+
+    &--200 {
+      font-weight: var(--fonts-font-weight-200);
+    }
+
+    &--300 {
+      font-weight: var(--fonts-font-weight-300);
+    }
+
+    &--400 {
+      font-weight: var(--fonts-font-weight-400);
+    }
+
+    &--500 {
+      font-weight: var(--fonts-font-weight-500);
+    }
+
+    &--600 {
+      font-weight: var(--fonts-font-weight-600);
+    }
+
+    &--700 {
+      font-weight: var(--fonts-font-weight-700);
+    }
+
+    &--800 {
+      font-weight: var(--fonts-font-weight-800);
+    }
+
+    &--900 {
+      font-weight: var(--fonts-font-weight-900);
+    }
+  }
+}

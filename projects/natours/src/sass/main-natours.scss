@@ -1,12 +1,9 @@
-@import './fonts.scss';
+/*  *** [NOMENCLATURA] SCSS ***
+          ➡️ Classes oriundas da pasta SASS iniciam com letra maiuscula
+          ➡️ Classes oriundas dos componentes iniciam com letra minuscula
 
-/*  *** [GLOBAL] BTN ***
-          ➡️ URL: https://cvgabriel.herokuapp.com/
-          ➡️ [APPS] Em Uso: ['Natous','']
-          ➡️ Componentes: Está sendo usado no ['app-header-natours', '']
 */
-.Btn {
-
+.BtnNatours {
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -39,7 +36,7 @@
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(var(--color-black--rgba), 0.2);
     -webkit-transform: translateY(-3px);
     -moz-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
@@ -76,62 +73,10 @@
   &:focus {
     outline: none;
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem var(--color-black--rgba, 0.2);
     -webkit-transform: translateY(-1px);
     -moz-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
     -o-transform: translateY(-1px);
-  }
-}
-
-
-/*  *** [GLOBAL] FONT LATO SANS SERIF ***
-          ➡️ URL: https://cvgabriel.herokuapp.com/
-          ➡️ [APPS] Em Uso: ['Natous','']
-          ➡️ Componentes: Está sendo usado no ['app-header-natours', '']
-*/
-.Fonts {
-  &__lato {
-    &--sans-serif {
-      font-family: var(--fonts-lato-sans-serif); // Foi setado globalmente no projeto natours
-    }
-  }
-
-  &__font-weight {
-    &--100 {
-      font-weight: var(--fonts-font-weight-100);
-    }
-
-    &--200 {
-      font-weight: var(--fonts-font-weight-200);
-    }
-
-    &--300 {
-      font-weight: var(--fonts-font-weight-300);
-    }
-
-    &--400 {
-      font-weight: var(--fonts-font-weight-400);
-    }
-
-    &--500 {
-      font-weight: var(--fonts-font-weight-500);
-    }
-
-    &--600 {
-      font-weight: var(--fonts-font-weight-600);
-    }
-
-    &--700 {
-      font-weight: var(--fonts-font-weight-700);
-    }
-
-    &--800 {
-      font-weight: var(--fonts-font-weight-800);
-    }
-
-    &--900 {
-      font-weight: var(--fonts-font-weight-900);
-    }
   }
 }
