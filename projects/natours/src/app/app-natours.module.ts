@@ -4,9 +4,10 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NavNatoursComponent } from './nav-natours/nav-natours.component';
 import { HeaderNatoursComponent } from './header-natours/header-natours.component';
+import { ExcitingNatoursComponent } from './exciting-natours/exciting-natours.component';
 
 @NgModule({
-  declarations: [AppNatoursComponent, NavNatoursComponent, HeaderNatoursComponent],
+  declarations: [AppNatoursComponent, NavNatoursComponent, HeaderNatoursComponent, ExcitingNatoursComponent],
   imports: [BrowserModule, AppNatoursRoutingModule],
   providers: [],
   bootstrap: [AppNatoursComponent],

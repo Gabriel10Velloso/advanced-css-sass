@@ -1,4 +1,10 @@
-.row {
+/*  *** [NOMENCLATURA] ADVANCED CSS SASS ***
+          ➡️ Classes oriundas da pasta SASS iniciam com letra maiuscula
+          ➡️ Classes oriundas dos componentes iniciam com letra minuscula
+            -Isto foi criado para deixar visual a identiciação (Forma fácil)
+*/
+
+.Row {
   max-width: $grid-width;
   margin: 0 auto;
 
