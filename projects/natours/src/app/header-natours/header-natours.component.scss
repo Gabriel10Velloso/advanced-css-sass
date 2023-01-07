@@ -1,4 +1,4 @@
-// @import '../../../../../src/styles.scss';
+@import '../../sass/global-natours.scss';
 
 .header {
   height: 95vh;
@@ -38,7 +38,8 @@
   }
 
   &__primary {
-    color: var(--color-white);
+    color: var(--color-white); // GLOBAL ROOT
+    // color: $color-natours-white; //  LOCAL
     text-transform: uppercase;
     backface-visibility: hidden; // serve para corrigir um pequeno bug da animação (little shaking)
     margin-bottom: 6rem;

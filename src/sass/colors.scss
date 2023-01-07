@@ -1,3 +1,9 @@
+
+/*  *** [Observação] Pasta sass Global e sass local ***
+          ➡️  SASS GLOBAL - Estou o root aonde pode ser inportado para todos os projetos var()
+          ➡️  SASS LOCAL  - Cada Projeto tem a sua pasta SASS com estilos personalizados
+          ➡️  OBS: Algumas cores poderão ser alteradas futuramente para o GLOBAL caso seja observado a necessidade de reuso do código
+*/
 :root {
   --color-primary: #55c57a;
   --color-primary-light: #7ed56f;
