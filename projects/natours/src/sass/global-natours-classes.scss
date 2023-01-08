@@ -21,8 +21,8 @@
     // }
 
     &--p1 {
-      left: 0;
       top: -2rem;
+      left: 0;
 
       // @include respond(tab-port) {
       //   top: 0;
@@ -31,8 +31,8 @@
     }
 
     &--p2 {
-      right: 0;
       top: 2rem;
+      right: 0;
 
       // @include respond(tab-port) {
       //   top: -1rem;
@@ -42,8 +42,8 @@
     }
 
     &--p3 {
-      left: 20%;
       top: 10rem;
+      left: 20%;
 
       // @include respond(tab-port) {
       //   top: 1rem;
@@ -57,13 +57,21 @@
       transform: scale(1.05) translateY(-.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-natours-black, .5);
       z-index: 20;
+      -webkit-transform: scale(1.05) translateY(-.5rem);
+      -moz-transform: scale(1.05) translateY(-.5rem);
+      -ms-transform: scale(1.05) translateY(-.5rem);
+      -o-transform: scale(1.05) translateY(-.5rem);
     }
 
   }
 
   &:hover &__photo:not(:hover) {
     transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
   }
 
-  //composition:hover composition__photo:not(:hover) {
+
 }
