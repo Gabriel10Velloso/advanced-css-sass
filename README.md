@@ -19,13 +19,24 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)
 ## 36. Building the About Section - Part 2 - Seção 5
 https://codingheroes.io/resources/
 HTML Entity Reference by CSS-Tricks - https://css-tricks.com/snippets/html/glyphs/
-`
+````
 &quot;	&#34;	“	
 &amp;	&#38;	&	
 &lt;	&#60;	<	
 &gt;	&#62;	>	
 &rarr; ->
-`
+````
+
+
+## ICONS 38. Building the Features Section - Seção 5
+````
+https://lineicons.com/
+https://icons8.com/icons/set/linea
+
+SVG customizado
+https://www.youtube.com/watch?v=V-xg-lFhXn4
+
+````
 
 
 
