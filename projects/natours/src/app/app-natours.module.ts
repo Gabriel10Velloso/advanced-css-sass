@@ -7,6 +7,7 @@ import { HeaderNatoursComponent } from './header-natours/header-natours.componen
 import { ExcitingNatoursComponent } from './exciting-natours/exciting-natours.component';
 import { FeaturesNatoursComponent } from './features-natours/features-natours.component';
 import { ToursNatoursComponent } from './tours-natours/tours-natours.component';
+import { StoriesNatoursComponent } from './stories-natours/stories-natours.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ToursNatoursComponent } from './tours-natours/tours-natours.component';
     ExcitingNatoursComponent,
     FeaturesNatoursComponent,
     ToursNatoursComponent,
+    StoriesNatoursComponent,
   ],
   imports: [BrowserModule, AppNatoursRoutingModule],
   providers: [],
