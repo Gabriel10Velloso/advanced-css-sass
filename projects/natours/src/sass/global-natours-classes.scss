@@ -419,7 +419,7 @@
     transition: all .5s;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-}
+  }
 
   &:hover &__caption {
     opacity: 1;
@@ -440,3 +440,4 @@
     -webkit-filter: blur(3px) brightness(80%);
   }
 }
+

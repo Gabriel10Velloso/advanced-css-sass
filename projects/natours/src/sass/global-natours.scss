@@ -1,9 +1,12 @@
 @import
-  "./global-natours-classes.scss",
+  "./global-natours-classes.scss"
+
+,
   "./abstracts-natours/functions-natours.scss",
   "./abstracts-natours/mixins-natours.scss",
   "./abstracts-natours/variables-natours.scss",
   "./layout/button-natours.scss",
   "./layout/grid-natours.scss",
   "./layout/typography-natours.scss",
+  "./layout/form.scss",
   "./layout/utilities-natours.scss";

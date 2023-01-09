@@ -8,6 +8,8 @@ import { ExcitingNatoursComponent } from './exciting-natours/exciting-natours.co
 import { FeaturesNatoursComponent } from './features-natours/features-natours.component';
 import { ToursNatoursComponent } from './tours-natours/tours-natours.component';
 import { StoriesNatoursComponent } from './stories-natours/stories-natours.component';
+import { BookNatoursComponent } from './book-natours/book-natours.component';
+import { FooterNatoursComponent } from './footer-natours/footer-natours.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { StoriesNatoursComponent } from './stories-natours/stories-natours.compo
     FeaturesNatoursComponent,
     ToursNatoursComponent,
     StoriesNatoursComponent,
+    BookNatoursComponent,
+    FooterNatoursComponent,
   ],
   imports: [BrowserModule, AppNatoursRoutingModule],
   providers: [],
