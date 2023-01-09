@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 import { AppNatourSharedModule } from '../../projects/natours/src/app/app-natours.module';
 import { AppTrilloSharedModule } from '../../projects/trillo/src/app/app-trillo.module';
 import { HomeComponent } from './home/home.component';
+
+const routerOptions: ExtraOptions = {
+  // scrollPositionRestoration: 'enabled',
+  anchorScrolling: 'enabled',
+  // scrollOffset: [0, 64],
+};
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,7 +33,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, routerOptions),
     AppNatourSharedModule.forRoot(),
     AppTrilloSharedModule.forRoot(),
   ],
