@@ -27,7 +27,6 @@ HTML Entity Reference by CSS-Tricks - https://css-tricks.com/snippets/html/glyph
 &rarr; ->
 ````
 
-
 ## ICONS 38. Building the Features Section - Seção 5
 ````
 https://lineicons.com/
@@ -35,6 +34,16 @@ https://icons8.com/icons/set/linea
 
 SVG customizado
 https://www.youtube.com/watch?v=V-xg-lFhXn4
+
+````
+
+
+## ICONS 40. Building the Tours Section - Part 2 - Seção 5
+### Images free para serem usadas
+
+````
+IMGS - DONWLOADS
+https://unsplash.com/
 
 ````
 

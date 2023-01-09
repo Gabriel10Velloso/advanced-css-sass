@@ -6,22 +6,29 @@ import { NavNatoursComponent } from './nav-natours/nav-natours.component';
 import { HeaderNatoursComponent } from './header-natours/header-natours.component';
 import { ExcitingNatoursComponent } from './exciting-natours/exciting-natours.component';
 import { FeaturesNatoursComponent } from './features-natours/features-natours.component';
+import { ToursNatoursComponent } from './tours-natours/tours-natours.component';
 
 @NgModule({
-  declarations: [AppNatoursComponent, NavNatoursComponent, HeaderNatoursComponent, ExcitingNatoursComponent, FeaturesNatoursComponent],
+  declarations: [
+    AppNatoursComponent,
+    NavNatoursComponent,
+    HeaderNatoursComponent,
+    ExcitingNatoursComponent,
+    FeaturesNatoursComponent,
+    ToursNatoursComponent,
+  ],
   imports: [BrowserModule, AppNatoursRoutingModule],
   providers: [],
   bootstrap: [AppNatoursComponent],
 })
 export class AppNatoursModule {}
 
-
 @NgModule({})
 export class AppNatourSharedModule {
   static forRoot(): ModuleWithProviders<any> {
     return {
       ngModule: AppNatoursModule,
-      providers: []
-    }
+      providers: [],
+    };
   }
 }
