@@ -58,4 +58,12 @@ https://coverr.co/
 ````
 
 
+## Cubic-Bezier
+
+````
+https://easings.net/
+https://cubic-bezier.com/#.17,.67,.83,.67
+````
+
+
 
