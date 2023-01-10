@@ -1,5 +1,11 @@
 import { DOCUMENT } from '@angular/common';
-import { AfterViewInit, Component, Inject, OnInit, Renderer2 } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  Inject,
+  OnInit,
+  Renderer2,
+} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
@@ -11,7 +17,7 @@ import { FaviconsService } from './services/favicons.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   newTitle = '';
 
   constructor(
@@ -20,7 +26,18 @@ export class AppComponent {
     private renderer2: Renderer2,
     private router: Router,
     @Inject(DOCUMENT) private document: Document
-  ) {
+  ) {}
+
+  ngOnInit(): void {
+
+    // if (window.performance) {
+    //   if (performance.navigation.type == 1) {
+    //     alert( "This page is reloaded" );
+    //   } else {
+    //     alert( "This page is not reloaded");
+    //   }
+    // }
+
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: any) => {
@@ -38,8 +55,7 @@ export class AppComponent {
           this.titleService.setTitle(this.newTitle);
           this.faviconService.updateFavicon('./favicon.ico');
           // this.router.navigate([event.url])
-        }
-        else if (event.url === '/natours') {
+        } else if (event.url === '/natours') {
           this.newTitle = 'Natours'; // Projeto 1
           this.renderer2.removeClass(this.document.body, 'AdvancedCssSass');
           this.renderer2.removeClass(this.document.body, 'TrilloBody');
@@ -47,8 +63,7 @@ export class AppComponent {
           this.titleService.setTitle(this.newTitle);
           this.faviconService.updateFavicon('./assets/icons/natours.ico');
           // this.router.navigate([event.url])
-        }
-        else if (event.url === '/trillo') {
+        } else if (event.url === '/trillo') {
           this.newTitle = 'Trillo'; // Projeto 2
           this.renderer2.removeClass(this.document.body, 'AdvancedCssSass');
           this.renderer2.removeClass(this.document.body, 'NatoursBody');
@@ -57,7 +72,6 @@ export class AppComponent {
           this.faviconService.updateFavicon('./assets/icons/nat-8.jpg');
           // this.router.navigate([event.url])
         }
-
       });
   }
 }
