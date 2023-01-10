@@ -18,8 +18,22 @@
 */
 html {
   // font-size: 10px; 16px  --- 100%  10px x 100/16px == 62.5%
-  font-size: 62.5%;
+  font-size: 70%;
   scroll-behavior: smooth;
+
+  @include respondGlobal(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respondGlobal(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respondGlobal(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
 
 }
 
