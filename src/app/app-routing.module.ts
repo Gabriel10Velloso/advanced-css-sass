@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+
 import { AppNatourSharedModule } from '../../projects/natours/src/app/app-natours.module';
 import { AppTrilloSharedModule } from '../../projects/trillo/src/app/app-trillo.module';
 import { HomeComponent } from './home/home.component';
-import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 const routerOptions: ExtraOptions = {
-  // scrollPositionRestoration: 'enabled',
+  scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
-  // scrollOffset: [0, 64],
+  scrollOffset: [0, 64],
 };
 
 const routes: Routes = [
