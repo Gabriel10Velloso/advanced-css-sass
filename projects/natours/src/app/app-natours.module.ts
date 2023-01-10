@@ -1,15 +1,16 @@
-import { AppNatoursComponent } from './app-natours.component';
-import { AppNatoursRoutingModule } from './app-natours.routing';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NavNatoursComponent } from './nav-natours/nav-natours.component';
-import { HeaderNatoursComponent } from './header-natours/header-natours.component';
+
+import { AppNatoursComponent } from './app-natours.component';
+import { AppNatoursRoutingModule } from './app-natours.routing';
+import { BookNatoursComponent } from './book-natours/book-natours.component';
 import { ExcitingNatoursComponent } from './exciting-natours/exciting-natours.component';
 import { FeaturesNatoursComponent } from './features-natours/features-natours.component';
-import { ToursNatoursComponent } from './tours-natours/tours-natours.component';
-import { StoriesNatoursComponent } from './stories-natours/stories-natours.component';
-import { BookNatoursComponent } from './book-natours/book-natours.component';
 import { FooterNatoursComponent } from './footer-natours/footer-natours.component';
+import { HeaderNatoursComponent } from './header-natours/header-natours.component';
+import { NavNatoursComponent } from './nav-natours/nav-natours.component';
+import { StoriesNatoursComponent } from './stories-natours/stories-natours.component';
+import { ToursNatoursComponent } from './tours-natours/tours-natours.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { FooterNatoursComponent } from './footer-natours/footer-natours.componen
     FooterNatoursComponent,
   ],
   imports: [BrowserModule, AppNatoursRoutingModule],
-  providers: [],
+  providers: [  { provide: Window, useValue: window } ],
   bootstrap: [AppNatoursComponent],
 })
 export class AppNatoursModule {}

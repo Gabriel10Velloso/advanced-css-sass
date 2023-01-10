@@ -22,9 +22,9 @@
     -o-transform: skewY(7deg);
   }
 
-  // @include respond(tab-port) {
-  //     padding: 10rem 0;
-  // }
+  @include respond(tab-port) {
+      padding: 10rem 0;
+  }
 
 }
 
@@ -37,9 +37,9 @@
   box-shadow: 0 1.5rem 4rem rgba($color-natours-black, .15);
   transition: transform .3s;
 
-  // @include respond(tab-port) {
-  //   padding: 2rem;
-  // }
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
 
   &__icon {
     font-size: 6rem;
@@ -49,9 +49,9 @@
     -webkit-background-clip: text;
     color: transparent;
 
-    // @include respond(tab-port) {
-    //   margin-bottom: 0;
-    // }
+    @include respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {
