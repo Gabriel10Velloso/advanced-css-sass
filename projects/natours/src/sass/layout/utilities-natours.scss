@@ -25,9 +25,9 @@
   &__margin-bottom-big {
     margin-bottom: 8rem !important;
 
-    // @include respond(tab-port) {
-    //   margin-bottom: 5rem !important;
-    // }
+    @include respond(tab-port) {
+      margin-bottom: 5rem !important;
+    }
   }
 
   &__margin-top-big {
